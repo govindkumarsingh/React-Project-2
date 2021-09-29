@@ -15,11 +15,13 @@ function App() {
     });
   };
 
+
+  // Fragment--> React.Fragment or import Fragment like useState or <>
   return (
-    <div>
+    <>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} />
-    </div>
+    </>
   );
 }
 
